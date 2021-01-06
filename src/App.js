@@ -1,10 +1,11 @@
+import React from "react";
+import "./Styles/GlobalStyles.scss";
+import { Header } from "./Components/Header/index";
+import { Footer } from "./Components/Footer/index";
 
-function App() {
-  return (
-    <div className="App">
-      <h1> Works </h1>
-    </div>
-  );
-}
-
-export default App;
+export const App = () => (
+  <>
+    <Header />
+    <Footer />
+  </>
+);

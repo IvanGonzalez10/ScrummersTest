@@ -1,0 +1,33 @@
+.header {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  background-color: rgba(255, 255, 255, 0.89);
+}
+
+.header img {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container-header a{
+  text-decoration: none;
+  margin: 20px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.nav-container-header a:hover{
+  border-bottom: 1px solid #FF9200;
+  color: #FF9200;
+  transition: color 500ms;
+}

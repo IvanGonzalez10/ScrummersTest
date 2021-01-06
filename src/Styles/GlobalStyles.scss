@@ -1,0 +1,27 @@
+html {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ul, li, h1, h2, h3, p, button {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+
+body {
+  background: #fff;
+  height: 100vh;
+  margin: 0 0;
+  width: 100vw;
+}
