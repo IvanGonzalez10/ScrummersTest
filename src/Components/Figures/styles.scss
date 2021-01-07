@@ -1,5 +1,5 @@
 .figures-container {
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,17 +9,15 @@
 .figures-container h1 {
   font-size: 60px;
   font-weight: 400;
-  margin-top: 10px;
 }
 
 .looking-container {
-  height:auto;
+  height: auto;
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px 0px;
 }
 
 .looking-container input {
@@ -27,7 +25,6 @@
   width: 60%;
   border: 1px solid black;
   border-radius: 25px;
-  padding: 5px 10px;
 }
 
 .looking-container button {
@@ -35,15 +32,20 @@
   width: 15%;
   border: 1px solid black;
   border-radius: 25px;
-  margin: 15px;
-  padding: 5px 10px;
   background: #ff910085;
 }
 
 .looking-container input:focus {
-outline: none;
+  outline: none;
 }
 
+.looking-container button:focus {
+  outline: none;
+}
+
+.looking-container button:hover {
+  cursor: pointer;
+}
 
 .figure-container {
   height: auto;
@@ -68,14 +70,14 @@ outline: none;
   align-items: center;
 }
 
-.title-available-figures h1{
+.title-available-figures h1 {
   font-size: 30px;
 }
 
 .items-available-figures {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);  
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -91,6 +93,7 @@ outline: none;
 .item-available img {
   height: 80px;
   width: 80px;
+  padding: 10px;
 }
 
 .item-available h2 {
@@ -98,7 +101,30 @@ outline: none;
 }
 
 .select-figures {
-  height: 350px;
+  height: 100%;
   width: 65%;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-figures h1{
+  font-size: 30px;
+}
+
+.title-available-figures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-select-figures h1{
+  font-size: 30px;
+}
+
+.added-figures {
+  height: 300px;
 }
