@@ -108,17 +108,13 @@
   height: 100%;
   width: 65%;
   border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .select-figures h1{
   font-size: 30px;
 }
 
-.title-available-figures {
+.title-select-figures {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,37 +127,29 @@
 
 .added-figures {
   min-height: 300px;
-  height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  justify-content: center;
   align-items: flex-start;
   padding: 10px;
 }
 
-.new-added-figure {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.new-added-figure img {
-  height: 80px;
-  width: 80px;
+.added-figures img {
+  height: 100px;
+  width: 100px;
   padding: 10px;
 }
 
-.new-added-figure h1 {
+.added-figures h1 {
   font-size: 20px;
 }
 
-.new-added-figure h2 {
+.added-figures h2 {
   font-size: 12px;
 }
 
-.new-added-figure button {
+.added-figures button {
   height: 12px;
   width: 12px;
   font-size: 10px;
@@ -170,7 +158,7 @@
   margin: 2px;
 }
 
-.new-added-figure button:focus {
+.added-figures button:focus {
 outline: none;
 }
 

@@ -127,7 +127,6 @@ export const Figures = () => {
             <h1>Items agregados</h1>
           </div>
           <div className="added-figures">
-            <div className="new-added-figure">
               {allNewData.map((data, i) => (
                 <div className="item-available" key={i}>
                   <img src={data.figure} alt={data.name} />
@@ -135,7 +134,6 @@ export const Figures = () => {
                   <button onClick={() => removeItem(i)}>X</button>
                 </div>
               ))}
-            </div>
           </div>
         </div>
       </div>
