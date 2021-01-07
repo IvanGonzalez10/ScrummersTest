@@ -55,19 +55,33 @@ const allData = [
 export const Figures = () => {
   const [activeData, setActiveData] = React.useState(0);
   const [query, setQuery] = React.useState("");
+  const [allNewData, setAllNewData] = React.useState([]);
   const maxData = allData.length;
 
+  const addItem = () => {
+    setAllNewData((oldArray) => [...oldArray, allData[activeData]]);
+  };
+
   const nextItem = () => {
-    setActiveData((itemsActiveData) => itemsActiveData + 1);
+    if (activeData + 1 >= allData.length) setActiveData(0);
+    else setActiveData((itemsActiveData) => itemsActiveData + 1);
   };
 
   const backItem = () => {
-    setActiveData((itemsActiveData) => itemsActiveData - 1);
+    /* setActiveData((itemsActiveData) => itemsActiveData - 1); */
+    if (activeData - 1 <= 0) setActiveData(allData.length - 1);
+    else setActiveData((itemsActiveData) => itemsActiveData - 1);
+  };
+
+  const removeItem = (i) => {
+    allNewData.pull(allData[activeData]);
   };
 
   const reloadItem = (data) => {
     setActiveData(data);
   };
+
+  console.log(allNewData);
   return (
     <div className="figures-container">
       <h1>Lista de Items</h1>
@@ -92,7 +106,7 @@ export const Figures = () => {
           </div>
           <h2>{allData[activeData].name}</h2>
         </div>
-        <button onClick={nextItem}>Agregar item</button>
+        <button onClick={addItem}>Agregar item</button>
       </div>
       <div className="figure-container">
         <div className="available-figures">
@@ -114,12 +128,13 @@ export const Figures = () => {
           </div>
           <div className="added-figures">
             <div className="new-added-figure">
-              <img
-                src={allData[activeData].figure}
-                alt={allData[activeData].name}
-              />
-              <h2>{allData[activeData].name}</h2>
-              <button onClick={backItem}>X</button>
+              {allNewData.map((data, i) => (
+                <div className="item-available" key={i}>
+                  <img src={data.figure} alt={data.name} />
+                  <h2>{data.name}</h2>
+                  <button onClick={() => removeItem(i)}>X</button>
+                </div>
+              ))}
             </div>
           </div>
         </div>

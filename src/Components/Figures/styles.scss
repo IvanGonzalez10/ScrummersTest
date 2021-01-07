@@ -133,17 +133,16 @@
   min-height: 300px;
   height: 100%;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  flex-direction: column;
-  justify-content: center;
+  display: flex;
+  flex-direction: wrap;
+  justify-content: flex-start;
   align-items: flex-start;
   padding: 10px;
 }
 
 .new-added-figure {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
