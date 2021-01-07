@@ -5,8 +5,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  top: 0;
   position: sticky;
   background-color: rgba(255, 255, 255, 0.89);
+  border-bottom: 1px solid #ff910052;
 }
 
 .image-container img{
