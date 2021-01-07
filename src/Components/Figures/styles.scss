@@ -9,6 +9,7 @@
 .figures-container h1 {
   font-size: 60px;
   font-weight: 400;
+  margin: 10px;
 }
 
 .looking-container {
@@ -25,6 +26,7 @@
   width: 60%;
   border: 1px solid black;
   border-radius: 25px;
+  margin: 5px;
 }
 
 .looking-container button {
@@ -33,6 +35,7 @@
   border: 1px solid black;
   border-radius: 25px;
   background: #ff910085;
+  margin: 5px;
 }
 
 .looking-container input:focus {
@@ -126,5 +129,30 @@
 }
 
 .added-figures {
-  height: 300px;
+  min-height: 300px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.new-added-figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-added-figure img {
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+}
+
+.new-added-figure h2 {
+  font-size: 12px;
 }

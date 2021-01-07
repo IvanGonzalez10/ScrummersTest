@@ -35,11 +35,11 @@ const allData = [
     figure: "./assets/semicirculo.svg",
   },
   {
-    name: "Cuadrado",
+    name: "Anillo",
     figure: "./assets/anillo.svg",
   },
   {
-    name: "Cuadrado",
+    name: "Elipse",
     figure: "./assets/elipse.svg",
   },
   {
@@ -80,11 +80,11 @@ export const Figures = () => {
             <h1>Items disponibles</h1>
           </div>
           <div className="items-available-figures">
-            {allData.map((data, index) => (
-            <div className="item-available">
-              <img src={data.figure} alt={data.name} />
-              <h2>{data.name}</h2>
-            </div>
+            {allData.map((data) => (
+              <div className="item-available">
+                <img src={data.figure} alt={data.name} />
+                <h2>{data.name}</h2>
+              </div>
             ))}
           </div>
         </div>
@@ -93,7 +93,10 @@ export const Figures = () => {
             <h1>Figuras agregadas</h1>
           </div>
           <div className="added-figures">
-            <img src={allData.figure} alt={allData.name} />
+            <div className='new-added-figure'>
+            <img src={allData[activeData].figure} alt={allData[activeData].name} />
+            <h2>{allData[activeData].name}</h2>
+            </div>
           </div>
         </div>
       </div>
