@@ -18,8 +18,7 @@ export const Brief = () => {
         El aumento de personal de TI es un servicio diseñado para agregar
         talento adicional a su equipo con todas las cualidades de Scrummers.
         Esto permite a las empresas encontrar de inmediato la opción adecuada
-        para el perfil de TI requerido, aumentando la escalabilidad y la e ﬁ
-        ciencia del desarrollo del proyecto de TI.
+        para el perfil de TI requerido, aumentando la escalabilidad y la eﬁciencia del desarrollo del proyecto de TI.
       </h2>
       <div className="brief-images-container">
         <div className="brief-image-container">
