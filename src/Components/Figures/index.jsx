@@ -54,13 +54,14 @@ const allData = [
 
 export const Figures = () => {
   const [activeData, setActiveData] = React.useState(0);
+  const [query, setQuery] = React.useState("");
   const maxData = allData.length;
 
-  const addItem = () => {
+  const nextItem = () => {
     setActiveData((itemsActiveData) => itemsActiveData + 1);
   };
 
-  const removeItem = () => {
+  const backItem = () => {
     setActiveData((itemsActiveData) => itemsActiveData - 1);
   };
 
@@ -71,8 +72,27 @@ export const Figures = () => {
     <div className="figures-container">
       <h1>Lista de Items</h1>
       <div className="looking-container">
-        <input placeholder="Buscar..." />
-        <button onClick={addItem}>Agregar item</button>
+        <input
+          placeholder={"Buscar... Ej: " + allData[activeData].name}
+          value={query}
+          onChange={(e) => {
+            setQuery(e.target.value);
+            console.log(setQuery(e.target.value));
+          }}
+        />
+        <div className="model-container">
+          <h1>Modelo item</h1>
+          <div className="model-figure">
+            <button onClick={backItem}>←</button>
+            <img
+              src={allData[activeData].figure}
+              alt={allData[activeData].name}
+            />
+            <button onClick={nextItem}>→</button>
+          </div>
+          <h2>{allData[activeData].name}</h2>
+        </div>
+        <button onClick={nextItem}>Agregar item</button>
       </div>
       <div className="figure-container">
         <div className="available-figures">
@@ -80,8 +100,8 @@ export const Figures = () => {
             <h1>Items disponibles</h1>
           </div>
           <div className="items-available-figures">
-            {allData.map((data) => (
-              <div className="item-available">
+            {allData.map((data, i) => (
+              <div className="item-available" key={i}>
                 <img src={data.figure} alt={data.name} />
                 <h2>{data.name}</h2>
               </div>
@@ -90,12 +110,16 @@ export const Figures = () => {
         </div>
         <div className="select-figures">
           <div className="title-select-figures">
-            <h1>Figuras agregadas</h1>
+            <h1>Items agregados</h1>
           </div>
           <div className="added-figures">
-            <div className='new-added-figure'>
-            <img src={allData[activeData].figure} alt={allData[activeData].name} />
-            <h2>{allData[activeData].name}</h2>
+            <div className="new-added-figure">
+              <img
+                src={allData[activeData].figure}
+                alt={allData[activeData].name}
+              />
+              <h2>{allData[activeData].name}</h2>
+              <button onClick={backItem}>X</button>
             </div>
           </div>
         </div>

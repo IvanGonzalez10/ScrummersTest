@@ -27,6 +27,7 @@
   border: 1px solid black;
   border-radius: 25px;
   margin: 5px;
+  padding-left: 20px;
 }
 
 .looking-container button {
@@ -153,6 +154,64 @@
   padding: 10px;
 }
 
+.new-added-figure h1 {
+  font-size: 20px;
+}
+
 .new-added-figure h2 {
   font-size: 12px;
+}
+
+.new-added-figure button {
+  height: 12px;
+  width: 12px;
+  font-size: 10px;
+  background: #fff;
+  border: 0.1px solid black;
+  margin: 2px;
+}
+
+.new-added-figure button:focus {
+outline: none;
+}
+
+.model-figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.model-figure img {
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+}
+
+.model-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.model-container h1 {
+  font-size: 20px;
+}
+
+.model-container h2 {
+  font-size: 12px;
+}
+
+.model-figure button {
+  height: 30px;
+  width: 30px;
+  font-size: 18px;
+  background: #fff;
+  border: 0.1px solid black;
+  margin: 0px 10px;
+}
+
+.model-figure button:hover {
+  transform: scale(1.1);
+  transition: transform 400ms;
 }
