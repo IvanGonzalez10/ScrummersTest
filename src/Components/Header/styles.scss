@@ -9,16 +9,21 @@
   background-color: rgba(255, 255, 255, 0.89);
 }
 
-.header img {
+.image-container img{
   margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
 
+.image-container img:hover {
+  transform: scale(1.05);
+  transition: transform 400ms;
+}
+
 .nav-container-header a{
   text-decoration: none;
   margin: 20px;
-  font-size: 18px;
+  font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
   padding: 10px 20px;
   letter-spacing: 1px;
