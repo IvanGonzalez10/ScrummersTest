@@ -21,6 +21,15 @@
   align-items: center;
 }
 
+.button-container {
+  height: auto;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .looking-container input {
   height: 40px;
   width: 60%;
@@ -37,6 +46,19 @@
   border-radius: 25px;
   background: #ff910085;
   margin: 5px;
+}
+
+.button-container button{
+  height: 30px;
+  width: 25%;
+  border: 1px solid black;
+  border-radius: 25px;
+  background: #ff910085;
+  margin: 5px 40px;
+}
+
+.button-container button:hover {
+  cursor: pointer;
 }
 
 .looking-container input:focus {
@@ -110,7 +132,7 @@
   border: 1px solid black;
 }
 
-.select-figures h1{
+.select-figures h1 {
   font-size: 30px;
 }
 
@@ -121,7 +143,7 @@
   align-items: center;
 }
 
-.title-select-figures h1{
+.title-select-figures h1 {
   font-size: 30px;
 }
 
@@ -159,7 +181,24 @@
 }
 
 .added-figures button:focus {
-outline: none;
+  outline: none;
+}
+
+.new-item-available {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-item-available img {
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+}
+
+.new-item-available h2 {
+  font-size: 12px;
 }
 
 .model-figure {
@@ -173,6 +212,13 @@ outline: none;
   height: 80px;
   width: 80px;
   padding: 10px;
+}
+
+.model-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .model-container {
