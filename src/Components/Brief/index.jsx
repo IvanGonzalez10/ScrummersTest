@@ -9,14 +9,14 @@ export const Brief = () => {
       <h2>
         En Scrummers contamos con más de 10 años de experiencia y más de 50
         productos digitales de alta calidad desarrollados por nuestro equipo.
-        Nuestra metodología le permite tener el control y visibilidad total de
-        su proyecto, con Scrummers deja el desarrollo de su producto en las
+        Nuestra metodología te permite tener el control y visibilidad total de
+        tu proyecto, con Scrummers dejas el desarrollo de tu producto en las
         mejores manos.
       </h2>
       <h1>Aumento de personal</h1>
       <h2>
         El aumento de personal de TI es un servicio diseñado para agregar
-        talento adicional a su equipo con todas las cualidades de Scrummers.
+        talento adicional a tu equipo con todas las cualidades de Scrummers.
         Esto permite a las empresas encontrar de inmediato la opción adecuada
         para el perfil de TI requerido, aumentando la escalabilidad y la
         eﬁciencia del desarrollo del proyecto de TI.
@@ -31,7 +31,7 @@ export const Brief = () => {
         <div className="brief-image-container">
           <img src="./assets/talk.png" alt="Habilidades" />
           <h1>Experiencia y habilidades</h1>
-          <h2>Validada por Scrummers</h2>
+          <h2>Validadas por Scrummers</h2>
         </div>
         <div className="brief-image-container">
           <img src="./assets/lookingfor.png" alt="Buscando" />
