@@ -7,15 +7,17 @@
   align-items: center;
 }
 
-.tech-container h1{
+.tech-container h1 {
   font-size: 60px;
   margin: 10px;
+  color: #ff9200;
 }
 
-.tech-container h2{
+.tech-container h2 {
   font-size: 20px;
   margin: 20px 100px;
   text-align: center;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .info-container {
@@ -27,17 +29,17 @@
   align-items: center;
 }
 
-.tech-info-container{
+.tech-info-container {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px ;
+  margin: 10px;
 }
 
-.tech-info-container img{
+.tech-info-container img {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,8 +48,37 @@
   height: 150px;
 }
 
-.tech-info-container h1{
+.tech-info-container h1 {
   font-size: 30px;
   align-items: center;
   justify-content: center;
+  color: #444;
+}
+
+@media screen and (max-width: 480px) {
+
+  .tech-container h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .tech-container h2 {
+    font-size: 18px;
+    margin: 20px 80px;
+  }
+
+  .tech-info-container img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+  }
+
+  .tech-info-container h1 {
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+  }
 }
