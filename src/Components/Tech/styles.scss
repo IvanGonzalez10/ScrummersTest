@@ -23,10 +23,8 @@
 .info-container {
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .tech-info-container {
@@ -46,6 +44,11 @@
   align-items: center;
   width: 150px;
   height: 150px;
+}
+
+.tech-info-container img:hover {
+  transform: rotateY(360deg);
+  transition: transform 2s;
 }
 
 .tech-info-container h1 {

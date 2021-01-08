@@ -46,6 +46,10 @@ export const Tech = () => {
           <img src="./assets/vercel.svg" alt="JavaScript" />
           <h1> Vercel </h1>
         </div>
+        <div className="tech-info-container">
+          <img src="./assets/visual.svg" alt="JavaScript" />
+          <h1> VSC </h1>
+        </div>
       </div>
     </div>
   );

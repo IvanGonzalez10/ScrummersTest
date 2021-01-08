@@ -52,57 +52,6 @@ const allData = [
   },
 ];
 
-const searchData = [
-  {
-    name: "Cuadrado",
-    figure: "./assets/cuadrado.svg",
-  },
-  {
-    name: "Triangulo",
-    figure: "./assets/triangulo.svg",
-  },
-  {
-    name: "Rectagulo",
-    figure: "./assets/rectangulo.svg",
-  },
-  {
-    name: "Rombo",
-    figure: "./assets/rombo.svg",
-  },
-  {
-    name: "Pentagono",
-    figure: "./assets/pentagono.svg",
-  },
-  {
-    name: "Hexagono",
-    figure: "./assets/hexagono.svg",
-  },
-  {
-    name: "Circulo",
-    figure: "./assets/circulo.svg",
-  },
-  {
-    name: "Semicirculo",
-    figure: "./assets/semicirculo.svg",
-  },
-  {
-    name: "Anillo",
-    figure: "./assets/anillo.svg",
-  },
-  {
-    name: "Elipse",
-    figure: "./assets/elipse.svg",
-  },
-  {
-    name: "Estrella",
-    figure: "./assets/estrella.svg",
-  },
-  {
-    name: "Cruz",
-    figure: "./assets/cruz.svg",
-  },
-];
-
 export const Figures = () => {
   const [activeData, setActiveData] = React.useState(0);
   const [query, setQuery] = React.useState("");
@@ -138,7 +87,6 @@ export const Figures = () => {
     setAllNewInfo(filteredItems);
   }, [query]);
 
-  /* console.log(filteredItems); */
   return (
     <div className="figures-container">
       <h1>Lista de Items</h1>

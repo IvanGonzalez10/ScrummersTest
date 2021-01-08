@@ -53,10 +53,6 @@
   cursor: pointer;
 }
 
-.looking-container input:focus {
-  outline: none;
-}
-
 .looking-container button:focus {
   outline: none;
 }
@@ -321,8 +317,14 @@
     font-size: 11px;
   }
 
+  .filter-item-container input {
+    width: 80%;
+    height: 20px;
+  }
+
   .select-figures {
     width: 60%;
+    margin-right: 5px;
   }
 
   .select-figures h1 {
@@ -352,7 +354,7 @@
     font-size: 60px;
   }
 
-  .figures-container input {
+  .filter-item-container input {
     font-size: 18px;
   }
 
@@ -399,6 +401,7 @@
 
   .select-figures {
     width: 60%;
+    margin-right: 5px;
   }
 
   .select-figures h1 {
