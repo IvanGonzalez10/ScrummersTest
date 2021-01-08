@@ -1,0 +1,32 @@
+.error-container {
+  margin: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  background-color: #fff;
+}
+
+.error-container h1 {
+  font-size: 98px;
+  margin: 50px 0;
+  font-weight: 450;
+  color: #FF9200;
+}
+
+.error-container h2 {
+  font-size: 24px;
+  color: #FF9200;
+  font-weight: 250;
+  padding-bottom: 10px;
+}
+
+.error-container h3 {
+  font-size: 16px;
+  margin: 15px 0;
+  padding: 3px 10px;
+  color: #FF9200;
+  font-weight: 250;
+}
