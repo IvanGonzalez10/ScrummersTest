@@ -5,4 +5,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 20px solid #ff910091;
+  font-family: "Montserrat", Sans-serif;
+}
+
+.team-container h1 {
+  font-size: 70px;
+  margin: 10px;
+  color: #ff9200;
+  margin: 80px 10px 40px 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.team-container h2 {
+  font-size: 16px;
+  margin: 30px 250px;
+  text-align: center;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.4);
+  letter-spacing: 1px;
+}
+
+.team-container h3 {
+  font-size: 16px;
+  margin: 30px 250px;
+  text-align: center;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 150px;
+  letter-spacing: 1px;
 }

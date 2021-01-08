@@ -7,7 +7,7 @@ export const Tech = () => {
       <h1>Objetivo Principal</h1>
       <h2>
         Soy ingeniero mecatrónico apasionado por el desarrollo de software. Mi
-        objetivo es hacer todo lo posible ayudando con mis conocimientos a
+        objetivo es hacer todo lo posible ayudado de mis conocimientos para
         encontrar las mejores soluciones e idealizar nuevas funcionalidades que
         se necesiten desarrollar en los proyectos de Scrummers.
       </h2>
