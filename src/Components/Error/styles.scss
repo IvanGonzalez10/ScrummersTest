@@ -1,5 +1,5 @@
 .error-container {
-  margin: 100px 0px;
+  margin: 50px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,14 +11,14 @@
 
 .error-container h1 {
   font-size: 98px;
-  margin: 50px 0;
+  margin: 45px 0;
   font-weight: 450;
-  color: #FF9200;
+  color: #444;
 }
 
 .error-container h2 {
-  font-size: 24px;
-  color: #FF9200;
+  font-size: 56px;
+  color: #444;
   font-weight: 250;
   padding-bottom: 10px;
 }
@@ -27,6 +27,27 @@
   font-size: 16px;
   margin: 15px 0;
   padding: 3px 10px;
-  color: #FF9200;
+  color: #444;
   font-weight: 250;
+}
+
+.error-container button {
+  height: 40px;
+  width: 150px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin: 15px 0;
+  padding: 3px 10px;
+  background: #FF9200;
+  border: 1px solid #FF9200;
+  color: #fff;
+  font-weight: 250;
+}
+
+.error-container button:hover {
+  cursor: pointer;
+}
+
+.error-container button:focus {
+  outline: none;
 }
