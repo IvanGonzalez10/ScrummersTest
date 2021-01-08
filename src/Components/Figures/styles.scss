@@ -86,9 +86,10 @@
 
 .available-figures {
   height: 100%;
-  width: 25%;
+  width: 30%;
   border: 1px solid black;
   margin: 10px;
+  margin-left: 5px;
 }
 
 .title-available-figures {
@@ -130,8 +131,9 @@
 
 .select-figures {
   height: 100%;
-  width: 65%;
+  width: 67%;
   border: 1px solid black;
+  margin-right: 20px;
 }
 
 .select-figures h1 {

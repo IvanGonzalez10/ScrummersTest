@@ -52,6 +52,57 @@ const allData = [
   },
 ];
 
+const searchData = [
+  {
+    name: "Cuadrado",
+    figure: "./assets/cuadrado.svg",
+  },
+  {
+    name: "Triangulo",
+    figure: "./assets/triangulo.svg",
+  },
+  {
+    name: "Rectagulo",
+    figure: "./assets/rectangulo.svg",
+  },
+  {
+    name: "Rombo",
+    figure: "./assets/rombo.svg",
+  },
+  {
+    name: "Pentagono",
+    figure: "./assets/pentagono.svg",
+  },
+  {
+    name: "Hexagono",
+    figure: "./assets/hexagono.svg",
+  },
+  {
+    name: "Circulo",
+    figure: "./assets/circulo.svg",
+  },
+  {
+    name: "Semicirculo",
+    figure: "./assets/semicirculo.svg",
+  },
+  {
+    name: "Anillo",
+    figure: "./assets/anillo.svg",
+  },
+  {
+    name: "Elipse",
+    figure: "./assets/elipse.svg",
+  },
+  {
+    name: "Estrella",
+    figure: "./assets/estrella.svg",
+  },
+  {
+    name: "Cruz",
+    figure: "./assets/cruz.svg",
+  },
+];
+
 export const Figures = () => {
   const [activeData, setActiveData] = React.useState(0);
   const [query, setQuery] = React.useState("");
@@ -62,11 +113,11 @@ export const Figures = () => {
   };
 
   const removedItem = (i) => {
-    setAllNewData((oldArray) => [...oldArray, allData[activeData]]);
+    setAllNewData([...allNewData.slice(0, i), ...allNewData.slice(i + 1)]);
   };
 
   const clearAllItems = () => {
-    setAllNewData((oldArray) => [...oldArray, allData[activeData]]);
+    setAllNewData([]);
   };
 
   const nextItem = () => {
@@ -104,9 +155,9 @@ export const Figures = () => {
           </div>
           <h2>{allData[activeData].name}</h2>
         </div>
-        <div className='button-container'>
-        <button onClick={addItem}>Agregar item</button>
-        <button onClick={clearAllItems}>Limpiar items</button>
+        <div className="button-container">
+          <button onClick={addItem}>Agregar item</button>
+          <button onClick={clearAllItems}>Limpiar items</button>
         </div>
       </div>
       <div className="figure-container">
@@ -128,13 +179,13 @@ export const Figures = () => {
             <h1>Items agregados</h1>
           </div>
           <div className="added-figures">
-              {allNewData.map((data, i) => (
-                <div className="new-item-available" key={i}>
-                  <img src={data.figure} alt={data.name} />
-                  <h2>{data.name}</h2>
-                  <button onClick={() => removedItem(i)}>X</button>
-                </div>
-              ))}
+            {allNewData.map((data, i) => (
+              <div className="new-item-available" key={i}>
+                <img src={data.figure} alt={data.name} />
+                <h2>{data.name}</h2>
+                <button onClick={() => removedItem(i)}>X</button>
+              </div>
+            ))}
           </div>
         </div>
       </div>
