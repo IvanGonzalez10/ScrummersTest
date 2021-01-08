@@ -41,18 +41,45 @@
 
 @media screen and (max-width: 480px) {
   .header {
-    top: 1px;
+    top: 0px;
     z-index: 5;
     height: 100px;
     position: -webkit-sticky;
     position: sticky;
   }
 
+  .image-container {
+    width: 100%;
+  }
+
   .image-container img {
-    width: 80%;
+    width: 70%;
     height: auto;
-    justify-content: center;
-    align-items: center;
+    margin-left: 15%;
+  }
+
+  .nav-container-header a {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 770px) and (min-width: 481px) {
+  .header {
+    top: 0px;
+    z-index: 5;
+    height: 150px;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .image-container img {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
   }
 
   .nav-container-header a {

@@ -57,3 +57,60 @@
   height: 300px;
   width: 300px;
 }
+
+@media screen and (max-width: 480px) {
+
+  .brief-container {
+    overflow-x: hidden;
+  }
+
+  .brief-container h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .brief-images-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brief-image-container {
+    width: 90%;
+  }
+
+  .brief-image-container h1 {
+    font-size: 30px
+  }
+}
+
+@media screen and (max-width: 770px) and (min-width: 481px) {
+  .brief-container {
+    overflow-x: hidden;
+  }
+
+  .brief-container h1 {
+    font-size: 60px;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .brief-container h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .brief-images-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brief-image-container {
+    width: 90%;
+  }
+
+  .brief-image-container h1 {
+    font-size: 30px
+  }
+}
