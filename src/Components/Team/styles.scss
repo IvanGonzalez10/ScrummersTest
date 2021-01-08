@@ -36,3 +36,47 @@
   margin-bottom: 150px;
   letter-spacing: 1px;
 }
+
+@media screen and (max-width: 480px) {
+  .team-container {
+    width: 100%;
+  }
+
+  .team-container h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .team-container h2 {
+    font-size: 16px;
+    margin: 20px 50px;
+  }
+
+  .team-container h3 {
+    font-size: 16px;
+    margin: 20px 50px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 770px) and (min-width: 481px) {
+  .team-container {
+    width: 100%;
+  }
+
+  .team-container h1 {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .team-container h2 {
+    font-size: 22px;
+    margin: 20px 100px;
+  }
+
+  .team-container h3 {
+    font-size: 22px;
+    margin: 20px 100px;
+    margin-bottom: 100px;
+  }
+}
