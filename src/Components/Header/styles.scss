@@ -11,7 +11,7 @@
   border-bottom: 1px solid #ff910052;
 }
 
-.image-container img{
+.image-container img {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@
   transition: transform 400ms;
 }
 
-.nav-container-header a{
+.nav-container-header a {
   text-decoration: none;
   margin: 20px;
   font-size: 14px;
@@ -33,8 +33,29 @@
   font-weight: 400;
 }
 
-.nav-container-header a:hover{
-  border-bottom: 1px solid #FF9200;
-  color: #FF9200;
+.nav-container-header a:hover {
+  border-bottom: 1px solid #ff9200;
+  color: #ff9200;
   transition: color 500ms;
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    top: 1px;
+    z-index: 5;
+    height: 100px;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+  .image-container img {
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-container-header a {
+    display: none;
+  }
 }

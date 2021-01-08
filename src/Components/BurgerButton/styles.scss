@@ -1,0 +1,88 @@
+.burger-menu {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ff910052;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  top: 10px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.nav-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+  height: auto;
+  top: 0;
+  left: -55vw;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.nav-container a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 30px;
+  background: #ff910052;
+}
+
+.open {
+  left: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .burger-menu {
+    display: flex;
+    z-index: 100;
+  }
+  .open .nav-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    width: 60vw;
+    top: 4%;
+    left: -5%;
+    transition: 0.5s;
+  }
+
+  .nav-container a {
+    font-size: 15px;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 770px) and (min-width: 481px) {
+  .burger-menu {
+    display: flex;
+    z-index: 100;
+  }
+  .open .nav-container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: auto;
+    top: 4%;
+    left: -2%;
+    transition: 0.5s;
+  }
+
+  .nav-container a {
+    font-size: 25px;
+    text-decoration: none;
+  }
+}
+

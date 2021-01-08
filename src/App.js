@@ -7,12 +7,14 @@ import { Project } from "./Pages/Project/Project";
 import { About } from "./Pages/About/About";
 import { Technologies } from "./Pages/Technologies/Technologies";
 import { NotFound } from './Pages/NotFound/NotFound';
+import { BurgerButton } from './Components/BurgerButton/index';
 
 import { Router } from "@reach/router";
 
 export const App = () => (
   <>
     <Header />
+    <BurgerButton />
     <Router>
       <NotFound default />
       <Home path='/' />
