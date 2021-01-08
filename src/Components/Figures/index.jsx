@@ -107,8 +107,9 @@ export const Figures = () => {
   const [activeData, setActiveData] = React.useState(0);
   const [query, setQuery] = React.useState("");
   const [allNewData, setAllNewData] = React.useState([]);
+  const [allNewInfo, setAllNewInfo] = React.useState([]);
 
-  const addItem = () => {
+  const addedItem = () => {
     setAllNewData((oldArray) => [...oldArray, allData[activeData]]);
   };
 
@@ -116,7 +117,7 @@ export const Figures = () => {
     setAllNewData([...allNewData.slice(0, i), ...allNewData.slice(i + 1)]);
   };
 
-  const clearAllItems = () => {
+  const clearedAllItems = () => {
     setAllNewData([]);
   };
 
@@ -130,19 +131,18 @@ export const Figures = () => {
     else setActiveData((itemsActiveData) => itemsActiveData - 1);
   };
 
-  console.log(allNewData);
+  React.useEffect(() => {
+    const filteredItems = allData.filter((data) =>
+      data.name.toLowerCase().includes(query)
+    );
+    setAllNewInfo(filteredItems);
+  }, [query]);
+
+  /* console.log(filteredItems); */
   return (
     <div className="figures-container">
       <h1>Lista de Items</h1>
       <div className="looking-container">
-        <input
-          placeholder={"Buscar... Ej: " + allData[activeData].name}
-          value={query}
-          onChange={(e) => {
-            setQuery(e.target.value);
-            console.log(setQuery(e.target.value));
-          }}
-        />
         <div className="model-container">
           <h1>Modelo item</h1>
           <div className="model-figure">
@@ -156,8 +156,8 @@ export const Figures = () => {
           <h2>{allData[activeData].name}</h2>
         </div>
         <div className="button-container">
-          <button onClick={addItem}>Agregar item</button>
-          <button onClick={clearAllItems}>Limpiar items</button>
+          <button onClick={addedItem}>Agregar item</button>
+          <button onClick={clearedAllItems}>Limpiar items</button>
         </div>
       </div>
       <div className="figure-container">
@@ -166,12 +166,23 @@ export const Figures = () => {
             <h1>Items disponibles</h1>
           </div>
           <div className="items-available-figures">
-            {allData.map((data, i) => (
+            {allNewInfo.map((data, i) => (
               <div className="item-available" key={i}>
                 <img src={data.figure} alt={data.name} />
                 <h2>{data.name}</h2>
               </div>
             ))}
+          </div>
+          <div className="filter-item-container">
+            <input
+              placeholder={"Buscar... Ej: " + allData[activeData].name}
+              type="text"
+              value={query}
+              onChange={(e) => {
+                setQuery(e.target.value);
+                console.log(setQuery(e.target.value));
+              }}
+            />
           </div>
         </div>
         <div className="select-figures">
